@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox → Documentação</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>    
+    <aside>       
+        <table>
+            <caption>Valores padrão das propriedades do Flexbox</caption>
+            <tr>
+                <th class="propriedade">propriedade</th>
+                <th class="valor">valor</th>
+            </tr>
+            <tr>
+                <td class="propriedade">flex-direction</td>
+                <td class="valor">row</td>
+            </tr> 
+            <tr>
+                <td class="propriedade">justify-content</td>
+                <td class="valor">flex-start</td>
+            </tr>
+            <tr>
+                <td class="propriedade">align-content</td>
+                <td class="valor">flex-start</td>
+            </tr>
+      </table>
+    </aside>
+    
+    <h1>Flexbox</h1>
+    <h2>Documentação</h2>
+
+
+    
+    <h3>display: flex</h3>
+    <p class="descricao-propriedade">
+        A propriedade display: flex deve ser a primeira a ser declarada no CSS. A partir dela é que o CSS vai entender que precisa estilizar o conteúdo do contêiner com a Caixa Flexível (flexbox).
+    </p>
+    <p>Exemplo:</p>
+    <div class="container display-flex">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+    </div>
+
+
+    
+    <h3>justify-content:</h3>
+
+    <p class="descricao-propriedade">
+        A propriedade justify-content pode ser usada para justificar o conteúdo do elemento contêiner em seu eixo primário, ou seja, eixo x (row,row-reverse) ou eixo y (column, column-reverse)</p>
+
+    <h4>Valores do justify-content:</h4>
+    <p class="flex-start">
+        O valor "flex-start" é o valor padrão do justify-content, faz as caixas começarem do início do contêiner 
+    </p>
+
+    <p>Exemplo:</p>
+
+    <div class="container display-flex justify-content">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+    </div>
+
+    <h4>Valor: "center"</h4>
+
+    <p class="descricao-propriedade">
+        O valor "center" vai alinhar o conteúdo ao centro do eixo primário </p>
+
+    <p>Exemplo:</p>
+
+    <div class="container display-flex justify-content-center">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+    </div>
+
+    <h4>Valor "space-between"</h4>
+
+    <p class="descicao-propriedade">
+        O valor "space-between" vai colocar um espaço entre os conteúdos
+    </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex justify-content-space-between">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+    </div>
+
+    <h4>Valor: "space-around"</h4>
+
+    <p class="descicao-propriedade">
+        O valor "space-around" vai colocar um espaço, não somente entre, mas também, antes e depois do conteúdo, em tudo ao seu redor 
+    </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex justify-content-space-around">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+    </div>
+
+
+
+</body>
+</html>
