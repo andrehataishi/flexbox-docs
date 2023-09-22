@@ -68,6 +68,13 @@ tr:nth-child(even), caption{
     background-color: lightgreen;
 }
 
+aside {
+    width:auto;
+    margin: 15px;
+    float: right;
+    background-color: lightgray;
+  }
+
 .container {
     height: 300px;
     background-color: lightsalmon;
@@ -83,6 +90,7 @@ tr:nth-child(even), caption{
     border: 5px;
     border-color: grey;
     border-style: solid;
+    
 }
 
 .display-flex {
@@ -101,10 +109,75 @@ tr:nth-child(even), caption{
     justify-content: space-around;
 }
 
-aside {
-    width:auto;
-    margin: 15px;
-    float: right;
-    background-color: lightgray;
-  }
+.justify-content-space-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-content-space-initial {
+    justify-content: initial;
+}
+
+.justify-content-space-inhreit {
+    justify-content: inherit;
+}
+
+.flex-direction {
+    flex-direction: row;
+}
+
+.flex-direction-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.flex-direction-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.flex-direction-column-inital {
+    flex-direction: initial;
+}
+
+.flex-direction-column-inhreit {
+    flex-direction: inherit;
+}
+
+.align-items-row {    
+    align-items: normal;  
+    flex-direction: row;
+}
+
+.align-items-column {    
+    align-items: normal;  
+    flex-direction: column;
+}
+
+
+.box-align-items-row {
+    height: auto;
+    width: 100px;
+    background-color: lightblue;
+    border: 5px;
+    border-color: grey;
+    border-style: solid;
+}
+
+.box-align-items-column {
+    height: 100px;
+    width: auto;
+    background-color: lightblue;
+    border: 5px;
+    border-color: grey;
+    border-style: solid;
+}
+
+
+
+
+
+
+
 

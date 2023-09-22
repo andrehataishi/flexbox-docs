@@ -54,9 +54,9 @@
     <h3>justify-content:</h3>
 
     <p class="descricao-propriedade">
-        A propriedade justify-content pode ser usada para justificar o conteúdo do elemento contêiner em seu eixo primário, ou seja, eixo x (row,row-reverse) ou eixo y (column, column-reverse)</p>
+        A propriedade "justify-content" pode ser usada para justificar o conteúdo do elemento contêiner em seu eixo primário, ou seja, eixo x (row,row-reverse) ou eixo y (column, column-reverse).</p>
 
-    <h4>Valores do justify-content:</h4>
+    <h4>Valores do justify-content: "flex-start"</h4>
     <p class="flex-start">
         O valor "flex-start" é o valor padrão do justify-content, faz as caixas começarem do início do contêiner 
     </p>
@@ -71,10 +71,10 @@
         <div class="contido"></div>
     </div>
 
-    <h4>Valor: "center"</h4>
+    <h4>Valores do justify-content: "center"</h4>
 
     <p class="descricao-propriedade">
-        O valor "center" vai alinhar o conteúdo ao centro do eixo primário </p>
+        O valor "center" vai alinhar o conteúdo ao centro do eixo primário. </p>
 
     <p>Exemplo:</p>
 
@@ -86,10 +86,10 @@
         <div class="contido"></div>
     </div>
 
-    <h4>Valor "space-between"</h4>
+    <h4>Valores do justify-content: "space-between"</h4>
 
     <p class="descicao-propriedade">
-        O valor "space-between" vai colocar um espaço entre os conteúdos
+        O valor "space-between" vai colocar um espaço entre os conteúdos.
     </p>
 
     <p>Exemplo:</p>
@@ -101,10 +101,10 @@
         <div class="contido"></div>
     </div>
 
-    <h4>Valor: "space-around"</h4>
+    <h4>Valores do justify-content: "space-around"</h4>
 
     <p class="descicao-propriedade">
-        O valor "space-around" vai colocar um espaço, não somente entre, mas também, antes e depois do conteúdo, em tudo ao seu redor 
+        O valor "space-around" vai colocar um espaço, não somente entre, mas também, antes e depois do conteúdo, em tudo ao seu redor + entre as caixas.
     </p>
 
     <p>Exemplo:</p>
@@ -115,6 +115,178 @@
         <div class="contido"></div>
         <div class="contido"></div>
     </div>
+
+    <h4>Valores do justify-content: "space-around"</h4>
+
+    <p class="descicao-propriedade">
+        O valor "space-evenly" diferentemente do valor "space-around" que coloca espaço antes, depois e entre as caixas, o valor "space-evenly" vai colocar espaço ao redor da caixa por igual, ou seja, não existe o espaço entre as caixas, somente ao redor de cada uma, de forma independente.
+    </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex justify-content-space-evenly">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+    </div>
+
+    <h4>Valores do justify-content: "initial"</h4>
+
+    <p class="descicao-propriedade">
+        O valor "initial" seta o valor da propriede como valor padrão (default). No caso da propriedade "justify-content" o valor padrão (defaut) é "flex-start", como visto anteriormente.
+    </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex justify-content-initial">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+    </div>
+
+    <h4>Valores do justify-content: "inherit"</h4>
+
+    <p class="descicao-propriedade">
+        O valor "inherit", que significa herança, copia uma determinada propriedade do seu elemento pai mais próximo.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex justify-content-inheirt">
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+        <div class="contido"></div>
+    </div>
+
+    <h3>flex-direction</h3>
+    <p>A propriedade "flex-direction" define a direção dos itens flexíveis, vulgo caixas, dentro do contêiner, modificando o a direção em (x,y,z).</p>
+    <h4>Valores do flex-direction: "row"</h4>
+
+    <p class="descicao-propriedade">
+        Valor padrão do flex-direction, define as caixas na horizontal (x) seguindo uma linha, em ordem.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex flex-direction">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+    <h4>Valores do flex-direction: "row-reverse"</h4>
+
+    <p class="descicao-propriedade">
+        O valor "row-reverse" inverte a ordem das caixas, continua na linha horizontal (x), além de posicionar a primeira caixa no lado direito.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex flex-direction-row-reverse">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+    <h4>Valores do flex-direction: "column"</h4>
+
+    <p class="descicao-propriedade">
+        O valor "column" organiza as caixas de forma vertical (y).
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex flex-direction-column">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+    <h4>Valores do flex-direction: "column-reverse"</h4>
+
+    <p class="descicao-propriedade">
+        O valor "column-revese" inverte a organização vertical (y).
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex flex-direction-column-reverse">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+    <h4>Valores do flex-direction: "initial"</h4>
+
+    <p class="descicao-propriedade">
+        O valor "inital" volta a propriedade ao valor padrão.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex flex-direction-initial">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+    <h4>Valores do flex-direction: "inhreit"</h4>
+
+    <p class="descicao-propriedade">
+        O valor "inhreit" puxa os valores de propriedade do elemento pai.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex flex-direction-inhreit">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+    <h3>align-items</h3>
+    <p>A propriedade "align-items" controla o alinhamento das caixas dentro do contêiner, possui interação direta com a propriedade "flex-direction".</p>
+    <h4>Valores do align-items: "normal" em linhas.</h4>
+
+    <p class="descicao-propriedade">
+        Valor padrão do "align-items", alinhado com "flex-direction" com valor de "row", ou seja, alinha as caixas de uma maneira para preencher (stretch) o contêiner de forma horizontal (row). OBS: esse valor padrão quando aplicado em itens de grade (grid items) com tamanho definido, transforma o valor (default) para start. Quando não possuir tamanho definido, tanto para a caixa (flexbox) quanto para grid (grid items), o valor (default) torna-se stretch. *IMPORTANTE* a altura da caixa não deve estar pré-definida.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex align-items-row ">
+        <div class="box-align-items-row">1</div>
+        <div class="box-align-items-row">2</div>
+        <div class="box-align-items-row">3</div>
+        <div class="box-align-items-row">4</div>
+        <div class="box-align-items-row">5</div>
+    </div>
+
+    <h4>Valores do align-items: "normal", em colunas</h4>
+
+    <p class="descicao-propriedade">
+        Valor padrão do "align-items", alinhado com "flex-direction" com valor de "column".
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex align-items-column ">
+        <div class="box-align-items-column">1</div>
+        <div class="box-align-items-column">2</div>
+        <div class="box-align-items-column">3</div>
+        <div class="box-align-items-column">4</div>
+        <div class="box-align-items-column">5</div>
+    </div>
+
+
+
 
 
 
