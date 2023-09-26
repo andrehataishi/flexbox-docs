@@ -42,14 +42,12 @@
     </p>
     <p>Exemplo:</p>
     <div class="container display-flex">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
     </div>
-
-
     
     <h3>justify-content:</h3>
 
@@ -64,11 +62,11 @@
     <p>Exemplo:</p>
 
     <div class="container display-flex justify-content">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
     </div>
 
     <h4>Valores do justify-content: "center"</h4>
@@ -79,11 +77,11 @@
     <p>Exemplo:</p>
 
     <div class="container display-flex justify-content-center">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
     </div>
 
     <h4>Valores do justify-content: "space-between"</h4>
@@ -94,11 +92,11 @@
 
     <p>Exemplo:</p>
     <div class="container display-flex justify-content-space-between">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
     </div>
 
     <h4>Valores do justify-content: "space-around"</h4>
@@ -109,11 +107,11 @@
 
     <p>Exemplo:</p>
     <div class="container display-flex justify-content-space-around">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
     </div>
 
     <h4>Valores do justify-content: "space-around"</h4>
@@ -124,11 +122,11 @@
 
     <p>Exemplo:</p>
     <div class="container display-flex justify-content-space-evenly">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
     </div>
 
     <h4>Valores do justify-content: "initial"</h4>
@@ -139,11 +137,11 @@
 
     <p>Exemplo:</p>
     <div class="container display-flex justify-content-initial">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
     </div>
 
     <h4>Valores do justify-content: "inherit"</h4>
@@ -154,11 +152,11 @@
 
     <p>Exemplo:</p>
     <div class="container display-flex justify-content-inheirt">
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
-        <div class="contido"></div>
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
     </div>
 
     <h3>flex-direction</h3>
@@ -254,11 +252,12 @@
     </div>
 
     <h3>align-items</h3>
-    <p>A propriedade "align-items" controla o alinhamento das caixas dentro do contêiner, possui interação direta com a propriedade "flex-direction".</p>
-    <h4>Valores do align-items: "normal" em linhas.</h4>
+    <p>A propriedade "align-items" controla o alinhamento das caixas dentro do contêiner, possui interação direta com a propriedade "flex-direction", alinhando no eixo secundário.</p>
+
+    <h4>Valores do align-items: "normal" em linhas (flex-direction-row).</h4>
 
     <p class="descicao-propriedade">
-        Valor padrão do "align-items", alinhado com "flex-direction" com valor de "row", ou seja, alinha as caixas de uma maneira para preencher (stretch) o contêiner de forma horizontal (row). OBS: esse valor padrão quando aplicado em itens de grade (grid items) com tamanho definido, transforma o valor (default) para start. Quando não possuir tamanho definido, tanto para a caixa (flexbox) quanto para grid (grid items), o valor (default) torna-se stretch. *IMPORTANTE* a altura da caixa não deve estar pré-definida.
+        Valor padrão do "align-items", alinhado com "flex-direction" com valor de "row", ou seja, alinha as caixas de uma maneira para preencher (stretch) o contêiner de forma horizontal (x, row). OBS: esse valor padrão quando aplicado em itens de grade (grid items) com tamanho definido, transforma o valor (default) para start. Quando não possuir tamanho definido, tanto para a caixa (flexbox) quanto para grid (grid items), o valor (default) torna-se stretch. *IMPORTANTE* a altura da caixa não deve estar pré-definida.
         </p>
 
     <p>Exemplo:</p>
@@ -270,7 +269,7 @@
         <div class="box-align-items-row">5</div>
     </div>
 
-    <h4>Valores do align-items: "normal", em colunas</h4>
+    <h4>Valores do align-items: "normal" em colunas (flex-direction-column)</h4>
 
     <p class="descicao-propriedade">
         Valor padrão do "align-items", alinhado com "flex-direction" com valor de "column".
@@ -280,15 +279,184 @@
     <div class="container display-flex align-items-column ">
         <div class="box-align-items-column">1</div>
         <div class="box-align-items-column">2</div>
-        <div class="box-align-items-column">3</div>
-        <div class="box-align-items-column">4</div>
-        <div class="box-align-items-column">5</div>
     </div>
 
+    <h4>Valores do align-items: "stretch" em linhas (flex-direction-row)</h4>
 
+    <p class="descicao-propriedade">
+        Valor fonte do padrão do align-items, ele estica as caixas até preencher o contêiner de forma vertical (y), isso porque o align-items está relacionado ao eixo secundário, como a direção da flecha (flex-direction-column) é o eixo principal e está direcionada na horizontal (x), em linha (row), o "align-items-stetch" vai alinhar/esticar/preencher as caixas no eixo vertical (y).
+        </p>
 
+    <p>Exemplo:</p>
+    <div class="container display-flex align-items-stretch-row">
+        <div class="box-align-items-stretch-row">1</div>
+        <div class="box-align-items-stretch-row">2</div>
+        <div class="box-align-items-stretch-row">3</div>
+        <div class="box-align-items-stretch-row">4</div>
+        <div class="box-align-items-stretch-row">5</div>
+    </div>
+    
+    <h4>Valores do align-items: "normal" em colunas (flex-direction-column)</h4>
 
+    <p class="descicao-propriedade">
+        Valor fonte do padrão do align-items, ele estica as caixas até preencher o contêiner de forma horizontal (x), pois o flex-direction-row está direcionando de forma vertical (y), ficando uma caixa em cima da outra, o "align-items-stretch" vai alinhar o eixo secundário para preencher de forma horizontal 
+        </p>
 
+    <p>Exemplo:</p>
+    <div class="container display-flex align-items-stretch-column ">
+        <div class="box-align-items-stretch-column">1</div>
+        <div class="box-align-items-stretch-column">2</div>
+    </div>
+    
+    <h4>Valores do align-items: "center" em linhas (flex-direction-row)</h4>
+
+    <p class="descicao-propriedade">
+        O valor "center" vai alinhar as caixas no centro do contêiner, como o flex-direction-row está direcionado na horizontal (x, row) o "align-items-center" vai alinhar no centro da horizontal.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex align-items-center-row">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+    <h4>Valores do align-items: "center" em colunas (flex-direction-column)</h4>
+
+    <p class="descicao-propriedade">
+        O valor "center" vai alinhar as caixas no centro do contêiner, como o flex-direction-column está direcionado na vertical (y, column) o "align-items-center" vai alinhar no centro da vertical.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex align-items-center-column">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+    
+    <h4>Valores do align-items: "flex-start" em linhas (flex-direction-row)</h4>
+
+    <p class="descicao-propriedade">
+        O valor "flex-start" vai alinhar as caixas no começo do contêiner, como o flex-direction-row está direcionado na horizontal (x, row) o "align-items-flex-start" vai alinhar no início da linha/primeira linha.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex align-items-flex-start-row">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+    <h4>Valores do align-items: "flex-start" em coluna (flex-direction-column)</h4>
+
+    <p class="descicao-propriedade">
+        O valor "flex-start" vai alinhar as caixas no começo do contêiner, como o flex-direction-column está direcionado na vertical (y, column) o "align-items-flex-start" vai alinhar no início da coluna/primeira coluna.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex align-items-flex-start-column">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+    <h4>Valores do align-items: "flex-end" em linhas (flex-direction-row)</h4>
+
+    <p class="descicao-propriedade">
+        O valor "flex-end" vai alinhar as caixas no fim do contêiner, como o flex-direction-row está direcionado na horizontal (x, row) o "align-items-flex-end" vai alinhar na última da linha/no fim da linha.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex align-items-flex-end-row">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+    <h4>Valores do align-items: "flex-end" em coluna (flex-direction-column)</h4>
+
+    <p class="descicao-propriedade">
+        O valor "flex-end" vai alinhar as caixas no fim do contêiner, como o flex-direction-column está direcionado na vertical (y, column) o "align-items-flex-end" vai alinhar na última coluna/no fim da coluna.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex align-items-flex-end-column">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>    
+    
+    <h4>Valores do align-items: "baseline" em linhas (flex-direction-row)</h4>
+
+    <p class="descicao-propriedade">
+        O valor "baseline" vai alinhar as caixas em cima da linha, como o flex-direction-row está direcionado na horizontal (x, row) o "align-items-baseline" vai alinhar em cima da linha horizontal.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex align-items-baseline-row">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+    <h4>Valores do align-items: "baseline" em colunas (flex-direction-column)</h4>
+
+    <p class="descicao-propriedade">
+        O valor "baseline" vai alinhar as caixas em cima da linha, como o flex-direction-row está direcionado na vertical (y, column) o "align-items-baseline" vai alinhar em cima da linha vertical.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex align-items-baseline-column">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+    <h4>Valores do align-items: "initial"</h4>
+
+    <p class="descicao-propriedade">
+        O valor "inhreit" puxa os valores de propriedade do elemento pai.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex align-items-initial">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+    <h4>Valores do align-items: "inhreit"</h4>
+
+    <p class="descicao-propriedade">
+        O valor "inital" volta a propriedade ao valor padrão.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex align-items-initial">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
 
 </body>
 </html>

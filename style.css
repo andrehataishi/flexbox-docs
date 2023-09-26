@@ -155,6 +155,67 @@ aside {
     flex-direction: column;
 }
 
+.align-items-stretch-column {    
+    align-items: stretch;  
+    flex-direction: column;
+}
+
+.align-items-stretch-row {    
+    align-items: stretch;  
+    flex-direction: row;
+}
+
+.align-items-center-row {    
+    align-items: center;  
+    flex-direction: row;
+}
+
+.align-items-center-column {    
+    align-items: center;  
+    flex-direction: column;
+}
+
+.align-items-flex-start-row {    
+    align-items: flex-start;  
+    flex-direction: row;
+}
+
+.align-items-flex-start-column {    
+    align-items: flex-start;  
+    flex-direction: column;
+}
+
+.align-items-flex-end-row {    
+    align-items: flex-end;  
+    flex-direction: row;
+}
+
+.align-items-flex-end-column {    
+    align-items: flex-end;  
+    flex-direction: column;
+}
+
+.align-items-baseline-row {    
+    align-items: baseline;  
+    flex-direction: row;
+}
+
+.align-items-baseline-column {    
+    align-items: baseline;  
+    flex-direction: column;
+}
+
+.align-items-initial {    
+    align-items: initial;  
+    flex-direction: row;
+}
+
+.align-items-inhreit {    
+    align-items: inherit;  
+    flex-direction: row;
+}
+
+
 
 .box-align-items-row {
     height: auto;
@@ -173,6 +234,26 @@ aside {
     border-color: grey;
     border-style: solid;
 }
+
+.box-align-items-stretch-row {
+    height: auto;
+    width: 100px;
+    background-color: lightblue;
+    border: 5px;
+    border-color: grey;
+    border-style: solid;
+}
+
+
+.box-align-items-stretch-column {
+    height: 100px;
+    width: auto;
+    background-color: lightblue;
+    border: 5px;
+    border-color: grey;
+    border-style: solid;
+}
+
 
 
 
