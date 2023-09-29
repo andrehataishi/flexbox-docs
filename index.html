@@ -53,6 +53,7 @@
 
     <p class="descricao-propriedade">
         A propriedade "justify-content" pode ser usada para justificar o conteúdo do elemento contêiner em seu eixo primário, ou seja, eixo x (row,row-reverse) ou eixo y (column, column-reverse).</p>
+        <p>Sintaxe justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | initial | inherit</p>
 
     <h4>Valores do justify-content: "flex-start"</h4>
     <p class="flex-start">
@@ -81,7 +82,7 @@
         <div class="contido">2</div>
         <div class="contido">3</div>
         <div class="contido">4</div>
-        <div class="contido">5</div>
+        <div class="contido">5</div>   
     </div>
 
     <h4>Valores do justify-content: "space-between"</h4>
@@ -160,7 +161,10 @@
     </div>
 
     <h3>flex-direction</h3>
-    <p>A propriedade "flex-direction" define a direção dos itens flexíveis, vulgo caixas, dentro do contêiner, modificando o a direção em (x,y,z).</p>
+    <p>A propriedade "flex-direction" define a direção dos itens flexíveis, as caixas, dentro do contêiner, modificando a direção nos eixos (x,y,z).</p>
+
+    <p>Sintaxe flex-direction: row | row-reverse | column | column-reverse | initial | inherit</p>
+
     <h4>Valores do flex-direction: "row"</h4>
 
     <p class="descicao-propriedade">
@@ -254,6 +258,8 @@
     <h3>align-items</h3>
     <p>A propriedade "align-items" controla o alinhamento das caixas dentro do contêiner, possui interação direta com a propriedade "flex-direction", alinhando no eixo secundário.</p>
 
+    <p>Sintaxe align-items: normal | stretch | flex-start | flex-end | baseline | initial | inherit</p>
+
     <h4>Valores do align-items: "normal" em linhas (flex-direction-row).</h4>
 
     <p class="descicao-propriedade">
@@ -296,8 +302,8 @@
         <div class="box-align-items-stretch-row">5</div>
     </div>
     
-    <h4>Valores do align-items: "normal" em colunas (flex-direction-column)</h4>
-
+    <h4>Valores do align-items: "normal" em colunas (flex-direction-column)</h4>  
+    
     <p class="descicao-propriedade">
         Valor fonte do padrão do align-items, ele estica as caixas até preencher o contêiner de forma horizontal (x), pois o flex-direction-row está direcionando de forma vertical (y), ficando uma caixa em cima da outra, o "align-items-stretch" vai alinhar o eixo secundário para preencher de forma horizontal 
         </p>
@@ -431,21 +437,6 @@
     <h4>Valores do align-items: "initial"</h4>
 
     <p class="descicao-propriedade">
-        O valor "inhreit" puxa os valores de propriedade do elemento pai.
-        </p>
-
-    <p>Exemplo:</p>
-    <div class="container display-flex align-items-initial">
-        <div class="contido">1</div>
-        <div class="contido">2</div>
-        <div class="contido">3</div>
-        <div class="contido">4</div>
-        <div class="contido">5</div>
-    </div>
-
-    <h4>Valores do align-items: "inhreit"</h4>
-
-    <p class="descicao-propriedade">
         O valor "inital" volta a propriedade ao valor padrão.
         </p>
 
@@ -458,5 +449,312 @@
         <div class="contido">5</div>
     </div>
 
+    <h4>Valores do align-items: "inherit"</h4>
+
+    <p class="descicao-propriedade">
+        O valor "inhreit" puxa os valores de propriedade do elemento pai.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex align-items-inhreit">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+    <h3>flex-wrap</h3>
+    <p>A propriedade "flex-wrap" define se os itens flexíveis (flex-box) são forçados a ficarem na mesma linha ou se podem ser quebradas em varias linhas, definindo se as caixas são esprimidas ou não.</p>
+
+    <p>Sintaxe flex-wrap: nowrap | wrap | wrap-reverse | initial | inherit</p>
+    
+    <h4>Valores do flex-wrap: "nowrap" em linhas (flex-direction-row).</h4>
+
+    <p class="descicao-propriedade">
+        Valor padrão do "flex-wrap", alinhado com "flex-direction" com valor de "row", define que não haverá quebra de linha, ou seja, ele espreme todas as caixas em uma linha só, como o valor "width" do contêiner não está pré-definido, as caixas sempre estarão esprimidas e não ficarão para fora.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex flex-wrap-nowrap-row ">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>        
+        <div class="contido">6</div>
+        <div class="contido">7</div>
+        <div class="contido">8</div>
+        <div class="contido">9</div>
+        <div class="contido">10</div>
+        <div class="contido">11</div>
+        <div class="contido">12</div>
+        <div class="contido">13</div>
+        <div class="contido">14</div>
+        <div class="contido">15</div> 
+    </div>
+    
+    <h4>Valores do flex-wrap: "nowrap" em colunas (flex-direction-column).</h4>
+
+    <p class="descicao-propriedade">
+        Valor padrão do "flex-wrap", alinhado com "flex-direction" com valor de "column", define que não haverá quebra de linha, ou seja, ele espreme todas as caixas em uma coluna só, caso o tamanho do contêiner seja menor do que a coluna das caixas, elas ficarão para fora do contêiner.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container-flex-wrap display-flex flex-wrap-nowrap-column ">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>        
+    </div>
+
+    <br>
+
+    <h4>Valores do flex-wrap: "wrap" em linhas (flex-direction-row).</h4>
+
+    <p class="descicao-propriedade">
+        Valor "wrap" do "flex-wrap", alinhado com "flex-direction" com valor de "row", define que haverá quebra de linha caso necessário, ou seja, ele não espreme todas as caixas em uma linha só.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex flex-wrap-wrap-row ">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>        
+        <div class="contido">6</div>
+        <div class="contido">7</div>
+        <div class="contido">8</div>
+        <div class="contido">9</div>
+        <div class="contido">10</div>
+        <div class="contido">11</div>
+        <div class="contido">12</div>
+        <div class="contido">13</div>
+        <div class="contido">14</div>
+        <div class="contido">15</div> 
+    </div>
+
+    <h4>Valores do flex-wrap: "wrap" em colunas (flex-direction-column).</h4>
+
+    <p class="descicao-propriedade">
+        Valor "wrap" do "flex-wrap", alinhado com "flex-direction" com valor de "column", define que haverá quebra de coluna, ou seja, ele não espreme todas as caixas em uma coluna só.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex flex-wrap-wrap-column ">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>   
+        <div class="contido">6</div>
+        <div class="contido">7</div>
+        <div class="contido">8</div>
+        <div class="contido">9</div>
+        <div class="contido">10</div>           
+    </div>
+    
+    <h4>Valores do flex-wrap: "wrap-reverse" em linhas (flex-direction-row).</h4>
+
+    <p class="descicao-propriedade">
+        Valor "wrap-reverse" do "flex-wrap", alinhado com "flex-direction" com valor de "row", define que haverá quebra de linha invertida, então ao invés de começar de cima pra baixo, ele vai começar a quebra de linha debaixo pra cima.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex flex-wrap-wrap-reverse-row ">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>        
+        <div class="contido">6</div>
+        <div class="contido">7</div>
+        <div class="contido">8</div>
+        <div class="contido">9</div>
+        <div class="contido">10</div>
+        <div class="contido">11</div>
+        <div class="contido">12</div>
+        <div class="contido">13</div>
+        <div class="contido">14</div>
+        <div class="contido">15</div> 
+    </div>
+
+    <h4>Valores do flex-wrap: "wrap-reverse" em colunas (flex-direction-column).</h4>
+
+    <p class="descicao-propriedade">
+        Valor "wrap-reverse" do "flex-wrap", alinhado com "flex-direction" com valor de "column", define que haverá quebra de coluna invertida, então ao invés de começar da esqueda pra direita, ele vai começar a quebra de coluna da direita pra esquerda.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex flex-wrap-wrap-reverse-column ">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>   
+        <div class="contido">6</div>
+        <div class="contido">7</div>
+        <div class="contido">8</div>
+        <div class="contido">9</div>
+        <div class="contido">10</div>           
+    </div>
+
+    <h4>Valores do flex-wrap: "initial"</h4>
+
+    <p class="descicao-propriedade">
+        O valor "inital" volta a propriedade ao valor padrão.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex flex-wrap-initial">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+
+    <h4>Valores do flex-wrap: "inhreit"</h4>
+
+    <p class="descicao-propriedade">
+        O valor "inhreit" puxa os valores de propriedade do elemento pai.
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex flex-wrap-inhreit">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>
+    </div>
+    
+
+    <h3>flex-flow</h3>
+    <p>A propriedade flex-flow nada é mais que uma short-band das propriedades flex-direction e flex-wrap, ou seja, podemos utilizar as duas proprieades em uma só, colocando 2 valores.</p>
+    <p>Exemplo:</p>
+
+
+    <table>
+        <tr>
+            <th class="propriedade">propriedade flex-flow</th>
+            <th class="valor">valor do flex-direction </th>
+            <th class="valor">valor do flex-wrap </th>
+        </tr>
+        <tr>
+            <td class="propriedade">flex-flow:</td>
+            <td class="valor">row</td>
+            <td class="valor">nowrap</td>
+        </tr> 
+        <tr>
+            <td class="propriedade">flex-flow:</td>
+            <td class="valor">row-reverse</td>
+            <td class="valor">wrap-reverse</td>
+        </tr>
+        <tr>
+            <td class="propriedade">flex-flow:</td>
+            <td class="valor">column-reverse</td>    
+            <td class="valor">wrap</td>        
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+  </table>
+
+  <p>Portanto como é possível ver podemos utilizar as duas propriedades em uma só, basta colocar os dois valores que queremos utlizar</p>
+
+  <br>
+
+  <h3>align-content</h3>
+    <p>A propriedade "align-content" define o alinhamento dos itens flexíveis (flex-box) no eixo secundário. Obrigatoriamente utilizar a propriedade "flex-wrap" com algum valor ex: "wrap" para funcionar. OBS: para alinhar o eixo primário é necessario utilizar o justify-content.</p>
+
+    <p>Sintaxe align-content: stretch | center | flex-start | flex-end | space-between | space-around | space-evenly | initial | inherit</p>
+    
+    <h4>Valores do align-content: "stretch" em linhas (flex-direction-row).</h4>
+
+    <p class="descicao-propriedade">
+        Valor padrão do "align-content", combinado com "flex-direction" com valor de "row", estica o alinhamento do conteúdo no eixo secundário (vertical, y).
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex align-content-row">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>  
+        <div class="contido">6</div>
+        <div class="contido">7</div>
+        <div class="contido">8</div>
+        <div class="contido">9</div>
+        <div class="contido">10</div>
+        <div class="contido">11</div>
+        <div class="contido">12</div>
+        <div class="contido">13</div>
+        <div class="contido">14</div>
+        <div class="contido">15</div>
+</div>
+    
+    <h4>Valores do align-content: "stretch" em colunas (flex-direction-column).</h4>
+
+    <p class="descicao-propriedade">
+        Valor padrão do "align-content", combinado com "flex-direction" com valor de "column", estica o alinhamento do conteúdo no eixo secundário (horizontal, x).
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex align-content-column">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>  
+        <div class="contido">6</div>
+        <div class="contido">7</div>
+        <div class="contido">8</div>
+        <div class="contido">9</div>
+</div>
+
+    <h4>Valores do align-content: "center" em linhas (flex-direction-row).</h4>
+
+    <p class="descicao-propriedade">
+        Valor "center" do "align-content", combinado com "flex-direction" com valor de "row", alinha as caixas no centro do eixo secundário (vertical, y).
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex align-content-center-row">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>  
+        <div class="contido">6</div>
+        <div class="contido">7</div>
+        <div class="contido">8</div>
+        <div class="contido">9</div>
+</div>
+
+    <h4>Valores do align-content: "center" em colunas (flex-direction-column).</h4>
+
+    <p class="descicao-propriedade">
+        Valor "center" do "align-content", combinado com "flex-direction" com valor de "column", alinha as caixas no centro do eixo secundário (horizontal, x).
+        </p>
+
+    <p>Exemplo:</p>
+    <div class="container display-flex align-content-center-column">
+        <div class="contido">1</div>
+        <div class="contido">2</div>
+        <div class="contido">3</div>
+        <div class="contido">4</div>
+        <div class="contido">5</div>  
+        <div class="contido">6</div>
+        <div class="contido">7</div>
+        <div class="contido">8</div>
+        <div class="contido">9</div>
+</div>
+
+
+        
 </body>
 </html>

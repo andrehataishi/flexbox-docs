@@ -23,40 +23,60 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1 {
-    font-size: 32pt;
+    font-size: 32pt    
 }
 
 h2 {
-    font-size: 26;
+    font-size: 22pt;
     margin-top: 10px;
 }
 
 h3 {
-    font-size: 22;
+    font-size: 18pt;
     font-weight:bold;
 }
 
 h4 {
-    font-size: 18;
+    font-size: 16pt;
     font-weight:bold;
 }
 
 p, table{
     margin: 20px 0;
+    margin-left: 20px;
 }
 
 p {
     line-height: 1.5;
-    font-size: 16;
+    font-size: 14pt;
     margin-left: 20px;
     text-align: justify;    
 }
 
-td, th {
-    font-size: 16pt;
+td,th, caption {
+    font-size: 14pt;
+    
+    
 }
 
-td, tr, th, caption {
+th {
+    font-weight: bold;    
+}
+
+td + td, th + th {
+    border-left: 1px solid #000;
+
+}
+
+.valor {
+    padding-left: 20px;
+}
+
+th {
+    padding-right: 20px;
+}
+
+/* td, tr, th, caption {
     border: 1px solid #000;
 }
 
@@ -66,7 +86,7 @@ tr:nth-child(odd) {
 
 tr:nth-child(even), caption{
     background-color: lightgreen;
-}
+} */
 
 aside {
     width:auto;
@@ -215,7 +235,76 @@ aside {
     flex-direction: row;
 }
 
+.flex-wrap-nowrap-row {    
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
 
+.flex-wrap-nowrap-column {    
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.flex-wrap-wrap-row {    
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.flex-wrap-wrap-column {    
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.flex-wrap-wrap-reverse-row {    
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+}
+
+.flex-wrap-wrap-reverse-column {    
+    flex-wrap: wrap-reverse;
+    flex-direction: column;
+}
+
+.flex-wrap-initial {    
+    flex-wrap: initial;
+    flex-direction: row;
+}
+
+.flex-wrap-inherit {    
+    flex-wrap: inherit;
+    flex-direction: row;
+}
+
+.align-content-row {
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+.align-content-column {
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.align-content-center-row {
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.align-content-center-column {
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+.container-flex-wrap {
+    height: 125px;
+    background-color: lightsalmon;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+}
 
 .box-align-items-row {
     height: auto;
@@ -243,7 +332,6 @@ aside {
     border-color: grey;
     border-style: solid;
 }
-
 
 .box-align-items-stretch-column {
     height: 100px;
